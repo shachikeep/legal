@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shachi Keep - PFC管理×筋トレ記録アプリ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #00e5ff, #00b4d8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .link-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      text-decoration: none;
+      color: #f0f0f0;
+      transition: border-color 0.2s, background 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .link-card:hover {
+      border-color: #00b4d8;
+      background: #1a2a2e;
+    }
+    .link-card .icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .link-card .text { text-align: left; }
+    .link-card .title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .link-card .desc {
+      font-size: 0.85rem;
+      color: #888;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Shachi Keep</div>
+    <p class="tagline">限界社畜でも続けられる<br>PFC管理×筋トレ記録アプリ</p>
+    <div class="links">
+      <a href="./privacy/" class="link-card">
+        <span class="icon">🔒</span>
+        <div class="text">
+          <div class="title">プライバシーポリシー</div>
+          <div class="desc">個人情報の取り扱いについて</div>
+        </div>
+      </a>
+      <a href="./terms/" class="link-card">
+        <span class="icon">📄</span>
+        <div class="text">
+          <div class="title">利用規約</div>
+          <div class="desc">サービス利用に関する規約</div>
+        </div>
+      </a>
+      <a href="./tokushoho/" class="link-card">
+        <span class="icon">🏢</span>
+        <div class="text">
+          <div class="title">特定商取引法に基づく表記</div>
+          <div class="desc">事業者情報・お支払いについて</div>
+        </div>
+      </a>
+    </div>
+    <footer>
+      &copy; 2026 川村泰輝（屋号：Shachi Keep）
+    </footer>
+  </div>
+</body>
+</html>
